@@ -1,0 +1,128 @@
+body{
+    font-family: 'inter', sans-serif;
+    background-color: rgb(7, 7, 7);
+    color: rgb(243, 240, 240);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    min-height: 95vh;
+}
+div.container{
+    flex: 1;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'prata', serif;
+}
+h1{
+    font-size: 3rem;
+}
+/*Styling the header and the nav bar*/
+header{
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    height: 50px;
+    padding: 30px 0;
+}
+nav ul, a{
+    text-decoration: none;
+    color: white;
+    padding: 0;
+}
+nav a{
+    padding-left: 10px;
+}
+nav > ul > li{
+    padding: 0 15px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+nav > a, nav > ul, .btn{
+    display: inline-block;
+    width: 32%;
+}
+nav a:hover{
+    text-decoration: underline;
+    text-shadow: 20px;
+}
+.btn button{
+    height: 50px;
+    width: 120px;
+    background-color: gold;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.btn button:hover{
+    border: 2px solid gold;
+    background-color: rgb(7, 7, 7);
+    color: gold;
+}
+.btn{
+    width: 31%;
+    text-align: center;
+}
+/*Moving to the next section after styling the header*/
+
+#top{
+    position: relative;
+    margin: 50px 0;
+}
+.info{
+    width: 50%;
+    margin-left: 50px;
+}
+/*.me > img{
+    position: absolute;
+    right: -100px;
+    width: 40%;
+}*/
+.sec2{
+    text-align: center;
+    margin: 50px ;
+}
+.sec2 h3{
+    margin: 30px 0;
+    clear: both;
+}
+.logos a{
+    padding: 20px 30px;
+}
+.logos a img{
+    padding-top: 10px;
+}
+/*Styling section 3*/
+#sec3{
+    margin: 50px 0;
+}
+#sec3 h3{
+    text-align: center;
+    margin: 50px 0;
+}
+/* All h3 header should follow this rule*/
+div h3:hover{
+    color: gold;
+    text-decoration: underline;
+}
+/*The rule above apply to all h3 header on the website*/
+/*The card style below also apply to all cards in section 4*/
+.card{
+    display: inline-block;
+    margin: 0 50px;
+    width: 35%;
+}
+.right{
+    position: relative;
+    margin-left: 10%;
+}
+/*Styling section 4. both card under this 
+section are linked to section 3 card, so they must follow the rule*/
+#sec4{
+    margin: 50px 0;
+    background-color: rgb(74, 74, 83);
+    padding-bottom: 30px;
+    width: 100%;
+}
+/*Styling section 5*/
