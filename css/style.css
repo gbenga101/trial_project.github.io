@@ -5,8 +5,8 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
-    margin: 0 50px;
     min-height: 95vh;
+    width: 100%;
 }
 div.container{
     flex: 1;
@@ -19,31 +19,33 @@ h1{
 }
 /*Styling the header and the nav bar*/
 header{
-    display: inline-block;
-    width: 100%;
-    margin: 0;
+    display: flex;
+    margin: 0 50px;
     height: 50px;
     padding: 30px 0;
+}
+nav{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+nav .first{
+    margin: 16px 0;
+    padding-left: 50px;
 }
 nav ul, a{
     text-decoration: none;
     color: white;
     padding: 0;
 }
-nav a{
-    padding-left: 10px;
-}
 nav > ul > li{
-    padding: 0 15px;
+    padding: 0 10px;
 }
 nav ul li{
     list-style-type: none;
     display: inline-block;
 }
-nav > a, nav > ul, .btn{
-    display: inline-block;
-    width: 32%;
-}
+
 nav a:hover{
     text-decoration: underline;
     text-shadow: 20px;
@@ -60,7 +62,7 @@ nav a:hover{
     background-color: rgb(7, 7, 7);
     color: gold;
 }
-.btn{
+.btssn{
     width: 31%;
     text-align: center;
 }
@@ -68,7 +70,7 @@ nav a:hover{
 
 #top{
     position: relative;
-    margin: 50px 0;
+    margin: 50px 0 50px 50px;
 }
 .info{
     width: 50%;
@@ -95,7 +97,7 @@ nav a:hover{
 }
 /*Styling section 3*/
 #sec3{
-    margin: 50px 0;
+    margin: 50px;
 }
 #sec3 h3{
     text-align: center;
@@ -117,12 +119,64 @@ div h3:hover{
     position: relative;
     margin-left: 10%;
 }
+.card img{
+    width: 100%;
+}
 /*Styling section 4. both card under this 
 section are linked to section 3 card, so they must follow the rule*/
 #sec4{
     margin: 50px 0;
+    /*paddisng-left: 50px;*/
     background-color: rgb(74, 74, 83);
     padding-bottom: 30px;
     width: 100%;
 }
+#sec4 > .right{
+    margin-left: 87px;
+}
 /*Styling section 5*/
+#sec5{
+    margin: 50px;
+}
+.work button{
+    border-radius: 0;
+}
+/*Styling the footer*/
+footer{
+    margin: 50px 0 0;
+    display: flex;
+    height: 50px;
+    background-color: rgb(74, 74, 83);
+}
+.foot{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 16px 50px;
+}
+footer > .foot > a{
+    font-size: 1rem;
+    padding: 0;
+}
+
+/*styling the social media handles*/
+.s-media a{
+    padding: 0 5px;
+}
+.s-media a img{
+    width: 20px;
+    height: 20px;
+}
+/*Styling socail media handle on index page*/
+
+@media (max-weight: 680px){
+    body{
+        width: 100%;
+        margin: 0;
+    }
+    .info{
+        text-align: center;
+        max-width: 100%;
+
+    }
+}
