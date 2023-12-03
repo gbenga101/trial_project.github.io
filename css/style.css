@@ -85,9 +85,9 @@ nav a:hover{
     text-align: center;
     margin: 50px ;
 }
-.sec2 h3{
-    margin: 30px 0;
-    clear: both;
+h3{
+    margin: 50px 0;
+    text-align: center;
 }
 .logos a{
     padding: 20px 30px;
@@ -98,42 +98,33 @@ nav a:hover{
 /*Styling section 3*/
 #sec3{
     margin: 50px;
-}
-#sec3 h3{
-    text-align: center;
-    margin: 50px 0;
+    display: flex;
+    gap: 20px;
 }
 /* All h3 header should follow this rule*/
-div h3:hover{
+h3:hover{
     color: gold;
     text-decoration: underline;
 }
 /*The rule above apply to all h3 header on the website*/
 /*The card style below also apply to all cards in section 4*/
-.card{
-    display: inline-block;
-    margin: 0 50px;
-    width: 35%;
-}
-.right{
-    position: relative;
-    margin-left: 10%;
-}
 .card img{
     width: 100%;
+    height: 293px;
+}
+.card p{
+    text-align: justify;
 }
 /*Styling section 4. both card under this 
 section are linked to section 3 card, so they must follow the rule*/
 #sec4{
     margin: 50px 0;
-    /*paddisng-left: 50px;*/
     background-color: rgb(74, 74, 83);
-    padding-bottom: 30px;
-    width: 100%;
+    padding: 50px;
+    display: flex;
+    gap: 20px;
 }
-#sec4 > .right{
-    margin-left: 87px;
-}
+
 /*Styling section 5*/
 #sec5{
     margin: 50px;
