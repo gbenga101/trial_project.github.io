@@ -62,10 +62,6 @@ nav a:hover{
     background-color: rgb(7, 7, 7);
     color: gold;
 }
-.btssn{
-    width: 31%;
-    text-align: center;
-}
 /*Moving to the next section after styling the header*/
 
 #top{
@@ -112,9 +108,6 @@ h3:hover{
     width: 100%;
     height: 293px;
 }
-.card p{
-    text-align: justify;
-}
 /*Styling section 4. both card under this 
 section are linked to section 3 card, so they must follow the rule*/
 #sec4{
@@ -160,14 +153,45 @@ footer > .foot > a{
 }
 /*Styling socail media handle on index page*/
 
-@media (max-weight: 680px){
-    body{
-        width: 100%;
-        margin: 0;
+@media/* (min-width: 426px) and */(max-width: 768px){
+    header{
+        margin: 0 20px;
+    }
+    nav .first{
+        padding-left: 0;
+    }
+    #top{
+        margin: 0px;
     }
     .info{
-        text-align: center;
-        max-width: 100%;
-
+        width: 100%;
+        margin: 30px 20px;
+    }
+    .info > h1, .info > p{
+        margin: 0;
+    }
+    #sec3{
+        margin: 30px 20px;
+        display: block;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    .card h2{
+        font-size: 2rem;
+    }
+    #sec4{
+        margin: 30px 0;
+        padding: 20px;
+        display: block;
+    }
+    #sec5{
+        margin: 30px 20px;
+    }
+    footer{
+        margin: 30px 0 0;
+    }
+    .foot{
+        margin: 16px 20px;
     }
 }
