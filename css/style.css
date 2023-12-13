@@ -45,6 +45,16 @@ nav ul li{
     list-style-type: none;
     display: inline-block;
 }
+#nav-toggle{
+    position: absolute;
+}
+nav .nav-icon{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    transform: translateY(-50%);
+}
 
 nav a:hover{
     text-decoration: underline;
@@ -72,18 +82,18 @@ nav a:hover{
     width: 50%;
     margin-left: 50px;
 }
-/*.me > img{
-    position: absolute;
-    right: -100px;
-    width: 40%;
-}*/
 .sec2{
     text-align: center;
-    margin: 50px ;
+    margin: 50px;
 }
 h3{
     margin: 50px 0;
     text-align: center;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .logos a{
     padding: 20px 30px;
@@ -153,7 +163,13 @@ footer > .foot > a{
 }
 /*Styling socail media handle on index page*/
 
-@media/* (min-width: 426px) and */(max-width: 768px){
+@media screen and (max-width: 768px){
+    nav .link{
+        display: none;
+    }
+    nav .nav-icon{
+        display: block;
+    }
     header{
         margin: 0 20px;
     }
@@ -162,13 +178,14 @@ footer > .foot > a{
     }
     #top{
         margin: 0px;
+        width: 90%;
     }
     .info{
         width: 100%;
         margin: 30px 20px;
     }
-    .info > h1, .info > p{
-        margin: 0;
+    .info > h1{
+        font-size: 2rem;
     }
     #sec3{
         margin: 30px 20px;
@@ -177,8 +194,11 @@ footer > .foot > a{
     .card{
         margin-bottom: 20px;
     }
+    .card img{
+        height: 200px;
+    }
     .card h2{
-        font-size: 2rem;
+        font-size: 1rem;
     }
     #sec4{
         margin: 30px 0;
@@ -190,8 +210,11 @@ footer > .foot > a{
     }
     footer{
         margin: 30px 0 0;
+        flex-wrap: wrap;
     }
+
     .foot{
-        margin: 16px 20px;
+        margin: 0px 20px;
+        align-items: center;
     }
 }
